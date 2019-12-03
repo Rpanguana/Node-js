@@ -39,11 +39,11 @@ console.log(text);
 
 }
 
-// loadByName(name){
-// let data = fs.readFileSync(Visitor[name], 'utf-8')
-// console.log(data)
+loadByName(name){
+let data = fs.readFileSync(Visitor[name], 'utf-8')
+console.log(data)
 
-// }
+}
 
 }
 
@@ -51,6 +51,6 @@ let visitor = new Visitor("jose cuervo", 25, '2019-12-16', '09:15', "none", "Rul
 
 // visitor.save()
 
-// visitor.load(1)
+visitor.load(1)
 
-visitor.loadByName(jose)
+visitor.loadByName("jose")

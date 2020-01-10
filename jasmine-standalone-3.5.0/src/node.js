@@ -1,7 +1,8 @@
 const fs = require('fs');
 
+
 class Visitor{
-    constructor(fullName, age, dateOfVisit, timeOfVisit, comments, assistantName){
+    constructor(fullName , assistantName , age , dateOfVisit , timeOfVisit , comments){
         this.fullName = fullName;
         this.age = age;
         this.dateOfVisit = dateOfVisit;
@@ -12,8 +13,6 @@ class Visitor{
     }
 
 save(){
-
-// let visitor = Visitor()
     let jsonString = JSON.stringify(this, null, 4)
 
     do {
@@ -47,7 +46,7 @@ console.log(data)
 
 }
 
-let visitor = new Visitor("jose cuervo", 25, '2019-12-16', '09:15', "none", "Rulani Panguana")
+let visitor = new Visitor("jose cuervo" , "Rulani Panguana", 25, '2019-12-16', '09:15', "none")
 
 // visitor.save()
 
